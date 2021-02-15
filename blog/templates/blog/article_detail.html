@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block static_files %}  
+<link rel="stylesheet" href="{% static 'blog/style.css' %}">
+{% endblock static_files %}  
+
+
+{% block page_content %}      
+
+<h2>{{ article.title }}</h2>
+<p>{{ article.body }}</p>
+<p>{{ article.pub_date }}</p>
+
+
+
+{% endblock page_content %}
+ 
