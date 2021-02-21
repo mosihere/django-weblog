@@ -36,7 +36,7 @@ def user_register(request):
             cd = form.cleaned_data
             User.objects.create_user(cd['username'], cd['email'], cd['password'])
             messages.success(request, "Your registeration complete", 'success')
-            return redirect('accounts:user_login')
+            return redirect('accounts:login')
     else:
         form = RegisterForm()
     return render(request, 'accounts/register.html', {'form':form})
