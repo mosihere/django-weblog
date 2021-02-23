@@ -2,10 +2,12 @@
 
 {% block page_content %} 
 
-<form action="#" method="post">
+<h1>Contact Us</h1>
+<form method="post" action="#">
     {% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="Send">
+    <div class="form-actions">
+      <button type="submit">Send</button>
+    </div>
 </form>
-
 {% endblock page_content %}

@@ -135,5 +135,6 @@ MEDIA_ROOT = (
 
 
 
-
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# Sending Email's Config
+DEFAULT_FROM_EMAIL = 'mostafakhoshhal@yahoo.com'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
