@@ -1,4 +1,3 @@
-from django.contrib.auth.signals import user_logged_out
 from django.urls import path
 from . import views
 
