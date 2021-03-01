@@ -8,11 +8,10 @@
 
 {% block page_content %}      
 
-
 	<h3>{{ article.title }}</h3>
 	<p>{{ article.body|safe}}</p><hr>
 	<small>{{ article.pub_date|timesince}}</small><hr>
 	<small>{{ article.author }}</small><hr>
-    
+
 {% endblock page_content %}
  

@@ -1,4 +1,4 @@
-from django.db import models
+from django.db import DefaultConnectionProxy, models
 from django.db.models.query_utils import PathInfo
 from django.urls import reverse
 from django.contrib.auth.models import User
